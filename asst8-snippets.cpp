@@ -174,7 +174,7 @@ static std::vector<Cvec3> g_tipPos,        // should be hair tip pos in world-sp
 
 
 // Specifying shell geometries based on g_tipPos, g_furHeight, and g_numShells.
-// You need to call this function whenver the shell needs to be updated
+// You need to call this function whenever the shell needs to be updated
 static void updateShellGeometry() {
   // TASK 1 and 3 TODO: finish this function as part of Task 1 and Task 3
 }
