@@ -58,13 +58,13 @@ static void initMaterials() {
   // bunny shell materials;
   shared_ptr<ImageTexture> shellTexture(new ImageTexture("shell.ppm", false)); // common shell texture
 
-  // needs to enable repeating of texture coordinates
+  // need to enable repeating of texture coordinates
   shellTexture->bind();
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
   glTexParameteri(GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
 
-  // eachy layer of the shell uses a different material, though the materials will share the
+  // each layer of the shell uses a different material, though the materials will share the
   // same shader files and some common uniforms. hence we create a prototype here, and will
   // copy from the prototype later
   Material bunnyShellMatPrototype("./shaders/bunny-shell-gl3.vshader", "./shaders/bunny-shell-gl3.fshader");
@@ -183,7 +183,7 @@ static void updateShellGeometry() {
 // every g_simulationsPerSecond times per second
 static void hairsSimulationCallback(int dontCare) {
 
-  // TASK 2 TODO: wrte dynamics simulation code here as part of TASK2
+  // TASK 2 TODO: write dynamics simulation code here as part of TASK2
 
   ...
 
